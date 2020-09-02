@@ -1,0 +1,87 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Contact Lari</title>
+    <meta name="description" content="LM ARCHITECTURE PORTFOLIO" />
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="LMArch.css" />
+    <script src="LMArch.js"></script>
+    <link rel="stylesheet" href="./jquery-ui-1.12.1.custom/jquery-ui.css">
+    <link href="css/lightbox.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script src="js/lightbox.min.js"></script>
+    <script>
+        $(document).ready(function(){
+    var feedURL = "https://api.flickr.com/services/feeds/photos_public.gne?id=154196032@N07&format=json&jsoncallback=?&tags=architecture";
+    $.getJSON(feedURL, function(data){
+        var html = "";
+        $.each(data.items, function(i, item){
+            html += "<a href=" + item.media.m +
+                " title=" + item.title +
+                " rel=lightbox[vectal]>";
+            html += " <img src=" + item.media.m +
+                " width=120 height=100";
+            html += " </a>";
+        });
+        $('#photos').html(html);
+    });
+
+});
+    </script>
+
+
+</head>
+
+<body id="body">
+    <header>
+        <h1 id="header">LARI MCABEE <br /> ARCHITECTURE PORTFOLIO</h1>
+
+        <!-- This list maintains the navigation bar within the header -->
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Updates.html">Photography</a></li>
+            <li><a class="active" href="Contact.html">Inspiration</a></li>
+            <li><a href="AboutMe.html">Experience</a></li>
+        </ul>
+
+    </header>
+
+    <main>
+
+        <div id='photos'>
+        </div>
+
+        <div id="tabs">
+            <h1>Contact Me!</h1>
+            <script>
+  $( function() {
+    $( "#tabs" ).tabs();
+  } );
+            </script>
+            <ul>
+                <li><a href="#tabs-1">EMAIL</a></li>
+                <li><a href="#tabs-2">PHONE NUMBER</a></li>
+            </ul>
+            <div id="#tabs-1">
+                <p>Lari.Mcabee@live.com</p>
+            </div>
+
+            <div id="tabs-2">
+                <p>(980)622-9049</p>
+            </div>
+
+        </div>
+        
+
+    <footer id="foot">
+        <br />
+        <a href="https://validator.w3.org/check?uri=referer">Validate HTML</a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+    <title>About Lari</title>
+    <meta name="description" content="LM ARCHITECTURE PORTFOLIO" />
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="LMArch.css" />
+    <script src="LMArch.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $.ajax({url: "ResumeText.txt", success: function(result){
+      $("#Resume").html(result);
+    }});
+  });
+});
+    </script>
+</head>
+
+<body id="body">
+    <header>
+        <h1 id="header">LARI MCABEE <br /> ARCHITECTURE PORTFOLIO</h1>
+
+        <!-- This list maintains the navigation bar within the header -->
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Updates.html">Photography</a></li>
+            <li><a href="Contact.html">Inspiration</a></li>
+            <li><a class="active" href="AboutMe.html">Experience</a></li>
+        </ul>
+
+    </header>
+
+    <main>
+
+        <!-- This will maintin the customers contact info along with having the ability to
+    email the customer directly with an email hyperlink to the webmail server -->
+        <button>View Resume Link</button>     
+        <button onclick="window.location.href = 'https://webpages.uncc.edu/ymeza/LMPortfolio/Resume_LariMcAbee.pdf';">
+         <div id="Resume"> </div
+         </button>
+
+
+
+    </main>
+
+    <footer id="foot">
+        <br />
+        <a href="https://validator.w3.org/check?uri=referer">Validate HTML</a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a>
+    </footer>
+
+</body>
+</html>
