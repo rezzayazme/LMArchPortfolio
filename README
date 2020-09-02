@@ -1,0 +1,33 @@
+ITIS 3135 Web Application Project
+Yasser Meza
+
+https://webpages.uncc.edu/ymeza/LMPortfolio/index.html
+
+Requirements: 
+	This Web Application was able to include all minimum specifications based on previous assignments. 4 pages total with global navigation bar. Each page has at least one form of interactivity. 
+
+-Home Page – index.html:
+	Interactivity 
+-	PDF Scrollable widget to present client’s portfolio
+-Photography – Update.html:
+	Functions
+-	jQuery Plugin for client’s professional Instagram page. This Widget allows the page to load the most recent photos from that Instagram page to the Web application. 
+Interactivity
+-	Clickable pictures will link to a full screen view of that image
+-	Link to Instagram page that loads Client’s professional Instagram.
+-Inspiration – Contact.html:
+	Functions
+-	jQuery Plugin that organizes images from AJAX request into a grid with a lightbox effect when each image is clicked. 
+-	Ajax Requests that pulls JSON data from Flickr. That data is the client’s favorite images that provide inspiration for her.
+-	jQuery UI widget that has 2 tabs to toggle between contact information (email and phone number)
+Interactivity
+-	Tabs that allow user to click and view clients Email or Phone Number
+-	Clickable images that load lightbox UI widget view
+-Experience – Contact.html:
+	Interactivity 
+		-Ajax request that loads info from .txt file. Meant to change the address of a link button when it is clicked. This loads the client’s Resume on click.
+Feedback Received
+	Most feedback has been based on loading time for the PDF viewer. It was suggested to find a way to load this quicker. It has been tough to do as the PDF file is very large. Many commented on the uniformity of the layout and the black and white color scheme, I have attempted to maintain this uniformity between all pages and content applied.
+
+Plans for Client
+	The website will allow the client to have an easy to show portfolio for when she does not have the physical copy with her. It allows any user to see her work, view her resume, and shows contact info for her. In the future I hope to clean up how her resume is presented that it is a cleaner view when it is clicked upon. I will also take a look into seprating the contact info from the inspiration page so that it is easier to view, along with adding links to webmail and linking the number as one that can be called. 
